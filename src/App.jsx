@@ -20,7 +20,7 @@ function App() {
       setError(null);
       setWeather(null);
       try {
-        const apiKey = 'b9513ce976a4293bdcb33698f87b8998';
+        const apiKey = '######################';
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=pt_br`;
         const response = await axios.get(url);
         setWeather(response.data);
